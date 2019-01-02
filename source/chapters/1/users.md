@@ -30,7 +30,7 @@ Create a server side method where we register an user
 
 // client side, in the browser try this:
 const data = {email: 'test@test.test', password: '12345'}
-Meteor.call('user.register', email, password, (err, result) => {
+Meteor.call('user.register', data, (err, result) => {
     console.log(err, result) // in case you try it twice, it will throw an exception that email already exists
 });
 
